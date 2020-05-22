@@ -1,6 +1,6 @@
 # SimpleNotePad
 
-**SimpleNotePad** is a very simple and minimalist HTML/CSS/JS application that does exactly one thing: provide a quick and dirty notepad!
+**SimpleNotePad** is a very simple and minimalist HTML/CSS/JS/PHP application that does exactly one thing: provide a quick and dirty notepad!
 
 You just type what you need to write down, and it instantly saves the text in a file on your server.
 
