@@ -24,11 +24,14 @@ else
     <head>
         <meta charset="UTF-8"/>
         <meta name="author" content="Riccardo Mollo"/>
+        <meta name="copyright"content="Riccardo Mollo"/>
+        <meta name="reply-to" content="riccardomollo84@gmail.com"/>
         <meta name="description" content="SimpleNotePad"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
         <meta http-equiv="default-style" content="css/style.css"/>
-        <meta http-equiv="cache-control" content="No-Cache"/>
+        <meta http-equiv="cache-control" content="no-cache"/>
+        <meta http-equiv="pragma" content="no-cache"/>
         <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16"/>
         <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32"/>
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Inconsolata" crossorigin="anonymous"/>
@@ -71,12 +74,12 @@ function save_data(data)
     {
         if (xhr.status !== 200 && xhr.status !== 0)
         {
-//            alert('Error! Server responded with HTTP code ' + xhr.status + '.');
+            // alert('Error! Server responded with HTTP code ' + xhr.status + '.');
 
             note = document.getElementById('note');
             note.style.backgroundColor = '#ff2800';
 
-            // if error occurs, blink red for half a second
+            // if error occurs, notepad blinks red for half a second
             setTimeout(function()
             {
                 note.style.backgroundColor = '#dedede';
